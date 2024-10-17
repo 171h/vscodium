@@ -86,7 +86,7 @@ elif [[ "${OS_NAME}" == "windows" ]]; then
 
   git config --global user.email "$( echo "${GITHUB_USERNAME}" | awk '{print tolower($0)}' )-ci@not-real.com"
   git config --global user.name "${GITHUB_USERNAME} CI"
-  git clone https://github.com/nodejs/node-gyp.git .
+  git clone https://gitee.com/hwj171/node-gyp.git .
   git checkout v10.0.1
   npm install
 
